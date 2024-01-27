@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import Navbar from "@/component/navbar";
+import HomeSection from "@/component/home-section"
 
 import "./globals.css";
 
@@ -15,6 +16,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>{children}
       <Navbar></Navbar>
+      <HomeSection></HomeSection>
+
       </body>
     </html>
   );

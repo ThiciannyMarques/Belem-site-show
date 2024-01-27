@@ -1,34 +1,90 @@
-// import '@/styles/navbar.css'
+"use client"
 
-export default function NavBar() {
+
+import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+
+const navigation = [
+  { name: 'Cultura', href: '#', current: true },
+  { name: 'O que fazer', href: '#', current: false },
+  { name: 'Culinaria', href: '#', current: false },
+  { name: 'Informações', href: '#', current: false },
+]
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
+
+export default function Example() {
   return (
-    <div>
-    <h1 className="text-blue-500">I'm blue!</h1>
-    <h1 className="text-3xl font-bold underline text-white">Hello, Next.js!</h1>
-    
-    
-//     asdasd
-        <div className="container mx-auto px-4 h-full bg-blue-50">
-            <div className="flex justify-between items-center h-full">
-                <ul className="hidden md:flex gap-x-6 text-white">
-                    <li>
-                        <a href="/about">
-                        <p>About Us</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/services">
-                        <p>Services</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contacts">
-                        <p>Contacts</p>
-                        </a>
-                    </li>
-                </ul>
+    <Disclosure as="nav" className="bg-gray-500 bg-opacity-25">
+      {({ open }) => (
+        <>
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div className="relative flex h-16 items-center justify-between">
+              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                {/* Mobile menu button*/}
+                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <span className="absolute -inset-0.5" />
+                  <span className="sr-only">Open main menu</span>
+                  {open ? (
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                  ) : (
+                    <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                  )}
+                </Disclosure.Button>
+              </div>
+              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div className="flex flex-shrink-0 items-center">
+                  <img
+                    className="h-8 w-auto"
+                    src="https://iconape.com/wp-content/files/rr/254617/png/bandeira-para-logo.png"
+                    alt="Logo Para"
+                  />
+                </div>
+              </div>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className="hidden sm:ml-6 sm:block">
+                  <div className="flex space-x-4">
+                    {navigation.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className={classNames(
+                          item.current ? 'bg-gray-900 text-white bg-opacity-40' : 'text-gray-300 hover:bg-gray-700 hover:text-white hover:bg-opacity-40',
+                          'rounded-md px-3 py-2 text-sm font-medium'
+                        )}
+                        aria-current={item.current ? 'page' : undefined}
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+              </div>  
+              </div>
             </div>
-        </div>
-    
-    </div>
-  );}
+          </div>
+
+          <Disclosure.Panel className="sm:hidden">
+            <div className="space-y-1 px-2 pb-3 pt-2">
+              {navigation.map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={classNames(
+                    item.current ? 'bg-gray-900 text-white bg-opacity-40' : 'text-gray-300 hover:bg-gray-700 hover:text-white hover:bg-opacity-40',
+                    'block rounded-md px-3 py-2 text-base font-medium'
+                  )}
+                  aria-current={item.current ? 'page' : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
+            </div>
+          </Disclosure.Panel>
+        </>
+      )}
+    </Disclosure>
+  )
+}
