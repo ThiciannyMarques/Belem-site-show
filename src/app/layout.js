@@ -1,6 +1,7 @@
-import { Inter } from "next/font/google";
+import { Inter,  } from "next/font/google";
 import Navbar from "@/component/navbar";
 import HomeSection from "@/component/home-section"
+import CardHome from "@/component/card-home"
 
 import "./globals.css";
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>{children}
       <Navbar></Navbar>
       <HomeSection></HomeSection>
+      <CardHome></CardHome>
 
       </body>
     </html>
