@@ -1,7 +1,7 @@
 export default function Example() {
     return (
-      <div className="relative isolate overflow-hidden py-24 sm:py-32">
-        <div className="mx-auto max-w-2xl px-6 lg:px-8 ">
+      <div className="relative isolate overflow-hidden py-24 sm:py-8 mt-14">
+        <div className="mx-auto max-w-2xl px-4 lg:px-8 ">
           <div className="max-w-2xl lg:mx-0 text-center">
             <h1 className="text-4xl d sm:text-6xl ">B E L E M</h1>
             <h3 className="mt-4 mb-4">

@@ -45,7 +45,9 @@ body::before {
   width: 100%;
   height: 100%;
   opacity: 0.7;
-  background: #939393 url('https://media.gettyimages.com/id/625585882/pt/foto/sunrise-at-the-a%C3%A7ai-market-ver-o-peso-bel%C3%A9m-brazil.jpg?s=1024x1024&w=gi&k=20&c=dS_zldig53VFVb44YUrAibWh7c8NzBLp41Rwpzi1NgY=')  no-repeat fixed ;
+  background: #939393 url('../../public/amazonia-papel.webp')  no-repeat fixed ;
+
+  /* background: #939393 url('https://media.gettyimages.com/id/625585882/pt/foto/sunrise-at-the-a%C3%A7ai-market-ver-o-peso-bel%C3%A9m-brazil.jpg?s=1024x1024&w=gi&k=20&c=dS_zldig53VFVb44YUrAibWh7c8NzBLp41Rwpzi1NgY=')  no-repeat fixed ; */
   background-size: cover;
   z-index: -1;
 

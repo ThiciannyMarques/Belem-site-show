@@ -29,11 +29,11 @@ const landscapes = [
   export default function Example() {
     return (
       
-        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-          <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
+        <div className="mx-auto max-w-2xl px-8 py-16 sm:px-6 sm:py-28 lg:max-w-5xl lg:px-8">
+          <div className="mt-4 grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-16">
             {landscapes.map((landscape) => (
               <div key={landscape.id} className="bg-white group relative rounded-md ">
-                <div className=" w-full overflow-hidden rounded-md bg-gray-200  group-hover:opacity-75 lg:h-80 text-center">
+                <div className=" w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-60 text-center">
                   <img
                     src={landscape.imageSrc}
                     alt={landscape.imageAlt}
