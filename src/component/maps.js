@@ -31,18 +31,8 @@ const Map = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center gap-2 ">
+    <div className="flex flex-col justify-center items-center gap-2 p-12">
       {/* Search component */}
-      <Autocomplete
-        onLoad={(autocomplete) => {
-          console.log("Autocomplete loaded:", autocomplete);
-          autocompleteRef.current = autocomplete;
-        }}
-        onPlaceChanged={handlePlaceChanged}
-        options={{ fields: ["address_components", "geometry", "name"] }}
-      >
-        <input className="border p-2 rounded" type="text" placeholder="Search for a location" />
-      </Autocomplete>
 
       {/* Map component */}
       <div className="w-1/2 h-96 mx-auto border rounded-sm ">
@@ -55,6 +45,16 @@ const Map = () => {
           {selectedPlace && <Marker position={searchLngLat} />}
         </GoogleMap>
       </div>
+      <Autocomplete
+        onLoad={(autocomplete) => {
+          console.log("Autocomplete loaded:", autocomplete);
+          autocompleteRef.current = autocomplete;
+        }}
+        onPlaceChanged={handlePlaceChanged}
+        options={{ fields: ["address_components", "geometry", "name"] }}
+      >
+        <input className="border p-2 rounded" type="text" placeholder="Search for a location" />
+      </Autocomplete>
     </div>
   );
 };
