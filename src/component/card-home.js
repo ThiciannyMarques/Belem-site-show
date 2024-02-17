@@ -29,19 +29,19 @@ const landscapes = [
   export default function Example() {
     return (
       
-        <div className="mx-auto max-w-2xl px-8 py-16 sm:px-6 sm:py-28 lg:max-w-5xl lg:px-8">
-          <div className="mt-4 grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-16">
+        <div className="mx-auto max-w-2xl px-8 py-16 sm:px-6 sm:py-28 lg:max-w-5xl lg:px-8 ">
+          <div className="mt-4 grid grid-cols-1 gap-x-10 gap-y-10 sm:grid-cols-1 lg:grid-cols-3 xl:gap-x-16 ">
             {landscapes.map((landscape) => (
               <div key={landscape.id} className="bg-white group relative rounded-md ">
                 <div className=" w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-60 text-center">
                   <img
                     src={landscape.imageSrc}
                     alt={landscape.imageAlt}
-                    className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                    className="h-full w-full object-cover object-center lg:h-full lg:w-full "
                   />
                 </div>
-                <div className="p-3 text-center">
-                    <h3 className="text-sm text-gray-700 font-bold">
+                <div className="p-3 text-center ">
+                    <h3 className="text-sm text-gray-700 font-bold ">
                       <a href={landscape.href}>
                         <span aria-hidden="true" className="absolute inset-0 " />
                         {landscape.Title}

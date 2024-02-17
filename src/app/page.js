@@ -1,6 +1,12 @@
 
+import HomeSection from "@/component/home-section"
+import CardHome from "@/component/card-home"
+
 export default function Home() {
   return (
-    <h1 className="text-3xl font-bold underline"></h1>
+    <div>
+      <HomeSection></HomeSection>
+      <CardHome></CardHome>
+    </div>
   );
 }
