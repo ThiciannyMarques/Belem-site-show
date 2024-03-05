@@ -39,10 +39,9 @@ export default function Example() {
                   <a href='/'>
 
                   <img
-                    className="h-8 w-auto"
-                    src="https://iconape.com/wp-content/files/rr/254617/png/bandeira-para-logo.png"
-                    alt="Logo Para"
-                    
+                    className="h-10 w-auto"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Brasão_de_Belém_do_Pará.png/600px-Brasão_de_Belém_do_Pará.png"
+                    alt="Logo Belém"
                   />
                   </a>
                 </div>

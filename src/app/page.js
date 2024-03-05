@@ -1,4 +1,3 @@
-
 import HomeSection from "@/component/home-section"
 import CardHome from "@/component/card-home"
 

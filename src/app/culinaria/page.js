@@ -1,11 +1,11 @@
-
+const textPrincipal = "Explore os encantos exóticos e culturais de Belém do Pará, onde cada esquina guarda histórias vibrantes e sabores inesquecíveis da Amazônia."
 const comidas = [
   {
     id: 1,
     Title: 'Tacaca',
     href: '#',
     imageSrc: 'https://blog.supernovaera.com.br/wp-content/webp-express/webp-images/uploads/2023/02/receita-de-tacaca-2048x1366.jpeg.webp',
-    imageAlt: "Front of men's Basic Tee in black.",
+    imageAlt: "Tacacá",
     Description: 'Tacacá é uma sopa paraense com tucupi, camarão seco, jambu e goma de tapioca, servida quente em cuia, apreciada por sua combinação única de sabores e texturas.',
   },
   {
@@ -13,7 +13,7 @@ const comidas = [
       Title: 'Vatapa',
       href: '#',
       imageSrc: 'https://obidense.com.br/images/noticias/10527/20122701_vata_Porta.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
+      imageAlt: "Vatapá",
       Description: 'O Vatapá é preparado com camarão seco, azeite de dendê, leite de coco e temperos locais, resultando em um prato cremoso e rico em sabores.',
   },
   {
@@ -21,7 +21,7 @@ const comidas = [
       Title: 'Maniçoba',
       href: '#',
       imageSrc: 'https://portaledicase.com/wp-content/uploads/2021/02/Aprenda-o-preparo-da-famosa-Manicoba-Paraense.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
+      imageAlt: "Maniçoba",
       Description: 'Maniçoba é um prato feito com folhas de mandioca brava (maniva) cozidas por um longo período de tempo (7 dias), com carnes de porco, charque, linguiça, toucinho, entre outros ingredientes.',
   },
   {
@@ -29,7 +29,7 @@ const comidas = [
     Title: 'Pato no Tucupi',
     href: '#',
     imageSrc: 'https://www.acritica.com/image/policy:1.146035.1647714052:1647714052/image.jpg?f=default&w=1200',
-    imageAlt: "Front of men's Basic Tee in black.",
+    imageAlt: "Pato no Tucupi",
     Description: 'Anim aute id magna aliqua ad ad non deserunt sunt',
   },
   {
@@ -37,7 +37,7 @@ const comidas = [
     Title: 'Caruru',
     href: '#',
     imageSrc: 'https://scontent.fjdo1-1.fna.fbcdn.net/v/t1.6435-9/75252927_736860233481000_1695754411034279936_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=c2f564&_nc_eui2=AeH54LK78wjAzJnDH3Zlgv_NgHmya5FQLdWAebJrkVAt1Wa_JWH5_ogSaT4vM-haCTmibOxfl5f63poYnu-QVQTK&_nc_ohc=0lB1WIGCp9cAX8lybJy&_nc_ht=scontent.fjdo1-1.fna&oh=00_AfCCT239FxoosVmOhTkOBSceSU9wST_qwL99xtib8H3ckw&oe=65DD181D',
-    imageAlt: "Front of men's Basic Tee in black.",
+    imageAlt: "Caruru",
     Description: 'Anim aute id magna aliqua ad ad non deserunt sunt',
   },
   {
@@ -45,7 +45,7 @@ const comidas = [
     Title: 'Açai',
     href: '#',
     imageSrc: 'https://btmais.com.br/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-10-at-15.51.44.jpeg',
-    imageAlt: "Front of men's Basic Tee in black.",
+    imageAlt: "Açaí",
     Description: 'Anim aute id magna aliqua ad ad non deserunt sunt',
   },
   {
@@ -53,7 +53,7 @@ const comidas = [
     Title: 'Bolo de macaxeira',
     href: '#',
     imageSrc: 'https://comidinhasdochef.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2019/09/Bolo-de-Macaxeira-Simples.jpg.webp',
-    imageAlt: "Front of men's Basic Tee in black.",
+    imageAlt: "Bolo de Macaxeira",
     Description: 'Anim aute id magna aliqua ad ad non deserunt sunt',
   },
   {
@@ -61,7 +61,7 @@ const comidas = [
     Title: 'Moqueca',
     href: '#',
     imageSrc: 'https://midias.agazeta.com.br/2022/10/12/filhote-com-camarao-caranguejo-ovo-cozido-e-acompanhamentos-891472-article.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
+    imageAlt: "Moqueca",
     Description: 'Anim aute id magna aliqua ad ad non deserunt sunt',
   },
   {
@@ -69,7 +69,7 @@ const comidas = [
     Title: 'Peixe na folha de bananeira',
     href: '#',
     imageSrc: 'https://espetinhodesucesso.com.br/wp-content/uploads/2022/04/Peixe-na-folha-de-bananeira.jpg',
-    imageAlt: "Front of men's Basic Tee in black.",
+    imageAlt: "Peixe na folha de bananeira",
     Description: 'Anim aute id magna aliqua ad ad non deserunt sunt',
   },
 ]
@@ -82,7 +82,7 @@ export default function Example() {
           <div className="max-w-2xl lg:mx-0 text-center">
             <h2 className="text-4xl sm:text-6xl ">Culinaria</h2>
             <h3 className="mt-6">
-            A culinária paraense é uma fusão de sabores amazônicos com influências indígenas, africanas e portuguesas, destacando pratos como tacacá, pato no tucupi e açaí. Peixes de água doce, como tucunaré e pirarucu, e frutas tropicais como cupuaçu e pupunha são comuns. A utilização de ingredientes regionais e técnicas tradicionais resulta em uma culinária única que reflete a diversidade da região amazônica.
+            {textPrincipal}
             </h3>
           </div>
         </div>
